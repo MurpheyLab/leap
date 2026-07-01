@@ -73,7 +73,7 @@
         </div>
     </nav>
     
-    
+    <!-- title, authors, etc -->
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
@@ -148,21 +148,41 @@
         </div>
     </section>
 
-    <section class="hero teaser">
+
+    <!-- damage videos -->
+    <section class="section">
         <div class="container is-max-desktop">
-            <div class="hero-body">
-                <video id="teaser" controls autoplay muted loop playsinline height="100%">
-                    <source src="./static/videos/video_compressed.mp4" type="video/mp4">
-                </video>
-                </script>
-                <h2 class="subtitle has-text-centered">
-                    <!-- <h2 class="title is-3"></h2> -->
-                    Video
-                </h2>
+            <!-- Side-by-side videos. -->
+            <h3 class="title is-3 has-text-centered">Rapid Adaptation to Burns, Cuts, and Repairs</h3>
+            <div class="columns is-centered has-text-centered">
+
+                <div class="column">
+                    <video controls autoplay muted loop playsinline style="height: 480px; width: auto; max-width: 100%;">
+                        <source src="./static/videos/wrist_cut_burn_square.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- <div class="column">
+                    <video controls autoplay muted loop playsinline height="240" style="max-width: 100%;">
+                        <source src="./static/videos/wrist_cut_vertical_2x.mp4" type="video/mp4">
+                    </video>
+                </div> -->
+                <div class="column">
+                    <video controls autoplay muted loop playsinline style="height: 480px; width: auto; max-width: 100%;">
+                        <source src="./static/videos/wrist_repair_vertical.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
+            <p class="has-text-centered">
+                Our method can adapt to actuator cuts, burns, and repairs. In-situ actuator repairs are fully out-of-distribution.
+                <br><br>
+                <strong>Architected materials provide guarantees for adaptation without simulation and with low sample complexity, requiring a minimal amount of hardware experiments for pretraining.</strong>
+            </p>
+            <!-- / Side-by-side videos. -->
         </div>
     </section>
-    
+
+
+    <!-- abstract -->
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
@@ -185,7 +205,8 @@
                             LEAP, our method for adaptive proprioception, via a tracing
                             task for a 6DoF soft wrist based on Handed Shearing Auxetic
                             (HSA) actuators. Our algorithm is able to adapt to cuts, burns,
-                            and actuator repairs, enabling simulation-free real-time adaptation that is critical for realizing the promise of soft robots outside the lab.
+                            and actuator repairs, enabling simulation-free real-time adaptation
+                            that is critical for realizing the promise of soft robots outside the lab.
                         </p>
                     </div>
                 </div>
@@ -193,6 +214,72 @@
             <!-- / Abstract. -->
         </div>
     </section>
+
+    <!-- tracing task -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Side-by-side videos. -->
+            <h3 class="title is-3 has-text-centered">Blind, Proprioception-Only Tracing</h3>
+            <div class="columns is-centered has-text-centered">
+
+                <div class="column">
+                    <video controls autoplay muted loop playsinline height="480" style="max-width: 100%;">
+                        <source src="./static/videos/tracing_before_4x.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">Undamaged</p>
+                </div>
+                <div class="column">
+                    <video controls autoplay muted loop playsinline height="480" style="max-width: 100%;">
+                        <source src="./static/videos/tracing_fail_4x.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">2 Cuts, 1 Burn: Unadapted</p>
+                </div>
+                <div class="column">
+                    <video controls autoplay muted loop playsinline height="480" style="max-width: 100%;">
+                        <source src="./static/videos/tracing_after_4x.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">After LEAP Adaptation</p>
+                </div>
+            </div>
+            <p class="has-text-centered">
+                The goal of the task is to use proprioception alone to trace a target contour. After damage occurs, LEAP is able to adapt and recover up to 100% of the original performance.
+            </p>
+            <!-- / Side-by-side videos. -->
+        </div>
+    </section>
+
+    <!-- key in lock video -->
+    <section class="hero teaser2">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" controls autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/IMG_5828_faster.mp4" type="video/mp4">
+                </video>
+                </script>
+                <h2 class="subtitle has-text-centered">
+                    <!-- <h2 class="title is-3"></h2> -->
+                    We introduce a 6-DoF soft wrist to utilize LEAP, which enables contact-rich, dexterous tasks.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- submitted video -->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" controls autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/video_compressed.mp4" type="video/mp4">
+                </video>
+                </script>
+                <h2 class="subtitle has-text-centered">
+                    <!-- <h2 class="title is-3"></h2> -->
+                    Video (with narration)
+                </h2>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
